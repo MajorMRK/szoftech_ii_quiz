@@ -904,5 +904,973 @@ const questionData = [
 				"helyes" : true
 			}
 		]
+	},
+	{
+		"kerdes": "Jelölje az ábrával kapcsolatos igaz állításokat!", 
+		"kep_url" : "./img/2.jpg", 
+		"valasz" : [
+			{
+				"szoveg" : "Kommunikációs diagram látható, melyen amin egy kliens szolgáltatást hív meg egy szerveren, az visszaigazolja, majd az a kapott eredményt visszaadja.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Kommunikációs diagram látható, melyen amin egy kliens szolgáltatást hív meg egy szerveren, majd az a kapott eredményt visszaadja.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Hiányos idő diagram látható, melyen amin egy kliens szolgáltatást hív meg egy szerveren, az visszaigazolja, majd az a kapott eredményt visszaadja.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Hiányos szekvencia diagram látható, melyen amin egy kliens szolgáltatást hív meg egy szerveren, az visszaigazolja, majd az a kapott eredményt visszaadja.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Az alábbi ábra alapján jelölje az igaz állításokat!", 
+		"kep_url" : "./img/3.jpg", 
+		"valasz" : [
+			{
+				"szoveg" : "Lesz olyan szerverre vonatkozó állapotgép, ahol az egyik állapot „várakozás” lesz.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Lesz olyan kliensre vonatkozó állapotgép, ahol az egyik állapot „várakozás” lesz, ebből csak kivezető állapotátmenet lesz.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Lesz olyan kliensre vonatkozó állapotgép, ahol az egyik állapot „várakozás” lesz, ebből több kivezető állapotátmenet lehet.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Lesz olyan szerverre vonatkozó állapotgép, ahol a „Kérés” és „Szünet” állapotok oda-vissza járhatóak",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Lesz olyan szerverre vonatkozó állapotgép, ahol a „kiszámítás” állapot elhagyásához olyan eseményre van szükség, mely kapott eredményt küld",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Kommunikációs diagramot látunk, időzítési megkötésekkel.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Egyik állítás sem igaz.",
+				"helyes" : false
+			},
+		]
+	},
+	{
+		"kerdes": "Hogyan kell értelmezni a kontextus interakciós ábrákat?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Olyan idődiagram, melyen környezeti előírások szerepelnek",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Olyan szekvencia diagram, melyen nem funkcionális megkötések szerepelnek.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Olyan kommunikációs diagram, melyen környezeti előírások szerepelnek.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a STRICT operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "A halmazban lévő operandusok szigorú sorrendjét írja elő",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Szigorú minőségi követelményeket ír le.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Csak akkor jöhet a következő, ha az előző teljes mértékben befejeződött",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Csak kezdési sorrendet szab meg, a befejezés a futásidő függvénye.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a REF operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Szigorú minőségi követelményeket ír le.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Csak akkor jöhet a következő, ha az előző teljes mértékben befejeződött",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Hivatkozás másik diagramra",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Azt szabja meg, hogy a halmazban lévő műveleteknek le kell futnia, opcionálisan.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a BRK operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Szigorú minőségi követelményeket ír le.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "A megszakítás esetén bekövetkező működést írja le.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Hivatkozás másik diagramra",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Tetszőlegesen felhasználható rövidítés, meg kell nézni az UML Modeling Guidelines dokumentumban, hogy aktuálisan mire van használva.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a ALT operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egymást kizáró működéseket ír le.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Csak akkor jöhet a következő, ha az előző teljes mértékben befejeződött és megvan a számítási érték.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "A párhuzamosítási alternatívákat jelöli",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a LOOP operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egymást kizáró működéseket ír le.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Csak akkor jöhet a következő, ha az előző teljes mértékben befejeződött és megvan a számítási érték.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "A párhuzamosítási alternatívákat jelöli",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Ismétlődés szemléltetéséhez használható",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "STRICT és ALT használatát váltja ki.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a SEQ operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egymást kizáró működéseket ír le.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Hasonlít a STRICT-hez, de itt a sorrendiség csak indításkor fontos",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "A párhuzamosítási alternatívákat jelöli",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Ismétlődés szemléltetéséhez használható",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "STRICT szinonimája, csak ezt általában UML2-ben használják.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Sorba kapcsolja az interakciókat",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a PAR operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egymást kizáró működéseket ír le.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Hasonlít a STRICT-hez, de itt a sorrendiség csak indításkor fontos",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "A párhuzamosítási alternatívákat jelöli",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Ismétlődés szemléltetéséhez használható",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "STRICT szinonimája, csak ezt általában UML2-ben használják.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Egyidejűséget jelöl",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Szekvencia diagram esetén hogyan kell értelmezni a REGION operátort?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egymást kizáró működéseket ír le.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Hasonlít a STRICT-hez, de itt a sorrendiség csak indításkor fontos",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "A párhuzamosítási alternatívákat jelöli",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Ismétlődés szemléltetéséhez használható",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "PAR esetén a kötelezően egyben végrehajtandó részt jelöli",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Egyidejűséget jelöl",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Szekvencia diagramon feltüntethető az objektum aktuális állapota, téglalapba írva.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Szekvencia diagramon feltüntethető az objektum aktuális állapota, lekerekített téglalapba írva.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Szekvencia diagramon feltüntethető az objektum aktuális állapota, ellipszisbe írva.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Az interakciós áttekintés olyan tevékenységdiagram, melyen szekvencia diagramokat hivatkozhatunk.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Az interakciós áttekintés olyan osztálydiagram, melyen szekvencia diagramokat hivatkozhatunk.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Az interakciós áttekintés olyan szekvencia diagram, melyen kommunikációs diagramokat hivatkozhatunk.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Az interakciós áttekintés olyan szekvencia diagram, melyen aktivitási diagramokat hivatkozhatunk.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Osztálydiagramon az osztály rajzelemben feltüntethetőek objektum életciklus hivatkozások.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Osztálydiagramon az osztály rajzelemben feltüntethetőek use case hivatkozások.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Az objektum életciklus diagram bemutatja, hogy milyen műveletek hatására melyik állapotból, melyik állapotba kerül egy példány.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Az állapotgép tulajdonképpen nem más, mint egy use-case és metódus-megvalósítás összerendelés",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Állapotgépen az összetett állapot jele egy lekerekített téglalap, benne két kisebb jellel.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Állapotgépen az összetett állapot jele lehet egy három részre osztott lekerekített téglalap.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Állapotgépen az összetett állapot jele lehet egy két részre osztott lekerekített téglalap.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Állapotgépen az összetett állapot jele lehet egy két részre osztott lekerekített téglalap – fent az állapot neve, lent tevékenységdiagram részlettel",
+				"helyes" : true,
+				"kep" : null
+            },
+            {
+				"szoveg" : "Állapotgépen az összetett állapot kibontható és több alállapotot tartalmaz, állapotátmenetekkel",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Állapotgépen az összetett állapot kibontható és több alállapotot tartalmaz, állapotátmenetek nélkül.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Jelölése téglalap, benne a választás, és a kimeneteken szögletes zárójelben a feltételek.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Állapotgépen az esetválasztó csúcs csak egymást kizáró kimeneteket tartalmazhat.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Jelölése rombusz, benne a választás, és a kimeneteken szögletes zárójelben a feltételek.",
+				"helyes" : true
+			},
+			{
+				"szoveg" : "Állapotgépen az esetválasztó csúcs nem csak egymást kizáró kimeneteket tartalmazhat, valamint párhozamos működés esetén jelezheti a párhuzamos szakasz kezdetét.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Az ábra alapján jelölje az igaz állításokat!", 
+		"kep_url" : "./img/4.jpg", 
+		"valasz" : [
+			{
+				"szoveg" : "Az ábrán egy állapotgép részlet látható, mely adott osztály működését írja le.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Az ábrán egy forgatókönyvhöz tartozó aktivitás diagram részlet látható, mely alapján kialakítható a csomagdiagram.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje, mely ábrázolási módok szabványosak UML2-ben, állapotautomatákra!", 
+		"kep_url" : null, 
+		"valasz" : [
+            {
+				"szoveg" : "Egyik sem",
+				"helyes" : false,
+			},
+			{
+				"szoveg" : "",
+				"helyes" : true,
+				"kep" : "./img/5.jpg"
+            },
+            {
+				"szoveg" : "",
+				"helyes" : true,
+				"kep" : "./img/6.jpg"
+			},
+            {
+				"szoveg" : "",
+				"helyes" : true,
+				"kep" : "./img/7.jpg"
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje, mely ábrázolási módok szabványosak UML2-ben, aktivitási diagramokra!", 
+		"kep_url" : null, 
+		"valasz" : [
+            {
+				"szoveg" : "Egyik sem",
+				"helyes" : true,
+			},
+			{
+				"szoveg" : "",
+				"helyes" : false,
+				"kep" : "./img/5.jpg"
+            },
+            {
+				"szoveg" : "",
+				"helyes" : false,
+				"kep" : "./img/6.jpg"
+			},
+            {
+				"szoveg" : "",
+				"helyes" : false,
+				"kep" : "./img/7.jpg"
+			}
+		]
+	},
+	{
+		"kerdes": "Állapotgépekkel kapcsolatban melyik állítás(ok) igaz?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egyszerű történeti állapot esetén (Közvetlen tartalmazó állapotba érkezéskor a közvetlen tartalmazott régióban elsőként) a történeti állapot rákövetkező állapotába kerül a vezérlés, amennyiben a történeti állapot üres. Ha nem üres, akkor azt az állapotot veszi fel újra az automata, melyben akkor volt, amikor a közvetlen tartalmazó állapot elhagyásra került.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Egyszerű történeti állapot esetén (Közvetlen tartalmazó állapotba érkezéskor a közvetlen tartalmazott régióban elsőként) a történeti állapotba kerül a vezérlés, amennyiben a történeti állapot üres. Ha nem üres, akkor azt az állapotot veszi fel újra az automata, melyben akkor volt, amikor a közvetlen tartalmazó állapot elhagyásra került.",
+				"helyes" : false
+			},
+			{
+				"szoveg" : "Egyszerű történeti állapot esetén (Közvetlen tartalmazó állapotba érkezéskor a közvetlen tartalmazott régióban elsőként) a történeti állapot rákövetkező állapotába kerül a vezérlés, amennyiben a történeti állapot üres. Ha nem üres, akkor azt az állapotot veszi fel újra az automata, melyben akkor volt, amikor a közvetlen tartalmazó állapot elhagyásra került. Az állapotkonfiguráció is visszaállításra kerül.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Állapotgépek kapcsán melyik összerendelés(ek) helyes?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egyszerű kezdő állapot",
+				"helyes" : true,
+				"kep" : "./img/8.jpg"
+            },
+            {
+				"szoveg" : "Mély történeti állapot",
+				"helyes" : false,
+				"kep" : "./img/9.jpg"
+			},
+            {
+				"szoveg" : "Egyszerű történeti állapot",
+				"helyes" : false,
+				"kep" : "./img/10.jpg"
+			}
+		]
+	},
+	{
+		"kerdes": "Igaz-e az alábbi állítás: \nMély történeti állapot estén (Közvetlen tartalmazó állapotba érkezéskor a közvetlen tartalmazott régióban elsőként) a történeti állapot rákövetkező állapotába kerül a vezérlés, amennyiben a történeti állapot üres.\nHa nem üres, akkor azt az állapotot veszi fel újra az automata, melyben akkor volt, amikor a közvetlen tartalmazó állapot elhagyásra került, de nem csak az állapot, hanem az állapotkonfiguráció kerül visszaállításra.", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Igaz",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Hamis",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Igaz-e az alábbi állítás:\nEgyszerű történeti állapot estén (Közvetlen tartalmazó állapotba érkezéskor a közvetlen tartalmazott régióban elsőként) a történeti állapot rákövetkező állapotába kerül a vezérlés, amennyiben a történeti állapot üres.\n	Ha nem üres, akkor azt az állapotot veszi fel újra az automata, melyben akkor volt, amikor a közvetlen tartalmazó állapot elhagyásra került, de nem csak az állapot, hanem az állapotkonfiguráció kerül visszaállításra.", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Igaz",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Hamis",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "A dialóguslefutás az állapotgép egyik fajtája, de állapotokként a képernyő állapotait kell feltüntetni.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "A dialóguslefutás az tevékenységdiagram egyik fajtája, de tevékenységekként a képernyő helyzetét kell feltüntetni.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "A dialóguslefutás az objektumdiagram egyik fajtája, de objektumok helyett a képernyőket kell feltüntetni.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egy UML-modell összefüggő (konzisztens), ha use case diagramjain nincs sem olyan use case, sem olyan aktor, mely nem vesz részt interakcióban.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Egy UML-modell összefüggő (konzisztens), ha osztálydiagramján nincs elszigetelt osztály.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Egy UML-modell összefüggő (konzisztens), ha létezik hozzá egy bizonyos lehetséges működőképes implementáció.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egy inkonzisztens specifikáció azzal jár, hogy nem lehet meghatározni a use casek közötti összefüggéseket.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Egy inkonzisztens specifikáció azzal jár, hogy nem lehet belőle olyan szoftvert fejleszteni, ami működőképes lenne.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Egy inkonzisztens specifikáció azzal jár, hogy lesznek olyan osztályok, melyek ugyan meg vannak valósítva, de használatban nincsenek.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Jelenleg úgy a teljesség, mint a konzisztencia megléte bizonyítható emulációs szoftverek segítségével.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Jelenleg nincs megoldva még a teljesség bizonyításának vagy cáfolásának feladata.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Jelenleg ugyan rendelkezésre áll olyan módszer, ill. a módszert megvalósító számítógépes eszköz, ami egy szoftver-terv UML-diagramjai közötti összhang bizonyítására, ill. cáfolására alkalmas lenne, ám ennek használata nem terjedt el.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Jelenleg nem áll rendelkezésre olyan módszer, ill. a módszert megvalósító számítógépes eszköz, ami egy szoftver-terv UML-diagramjai közötti összhang bizonyítására, ill. cáfolására lenne alkalmas.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "A komponens diagram a komponensekből felépülő szoftver-rendszer struktúráját vázolja fel.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "A komponens adott modellelemek (osztályok, csomagok) fizikai egysége.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "A komponens diagram jól modellezi a szoftver-komponensek egymáshoz való viszonyát, kommunikációját.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "A komponens adott modellelemek (use case és forgatókönyv) fizikai egysége.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "UML szimbóluma egy téglalap, amelynek bal oldalát két kisebb téglalap metszi.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Egy komponensben csak egy implementációs osztály valósulhat meg, vagy számos tervezési osztály.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "UML szimbóluma egy téglalap, amelynek jobb felső sarkát körbe írt paraméter jellemezheti..",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Egy komponensben számos implementációs osztály valósulhat meg.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Komponens diagramon a <<executable>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Komponens diagramon a <<trace>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Komponens diagramon a <<implements>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Komponens diagramon a <<snapshot>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Komponens diagramon a <<file>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Komponens diagramon a <<file>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Komponens diagramon a <<instanceOf>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Komponens diagramon a <<library>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Komponens diagramon a <<property>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Komponens diagramon a <<document>> sztereotípia használható komponensek jellemzésére.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "A telepítési diagram minden egyes csomópontja (node) valamilyen számítási feldolgozási egységet képvisel, egy szoftver vagy egy hardver elemet.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "A telepítési és komponens diagramok nem kombinálhatóak közös ábrába.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "A telepítési diagram minden egyes csomópontja (node) valamilyen számítási feldolgozási egységet képvisel, egy szoftver vagy egy hardver elemet. A hardver lehet egy kisebb egység, de lehet egy teljes számítógép is.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "A telepítési és komponens diagramok nem kombinálhatóak közös ábrába.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Az UML-specifikáció részét képező OCL nyelv megszorítások definiálására alkalmas.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Az UML-specifikáció részét képező OCL nyelv pszeudo-kód és ábrarészletek definiálására alkalmas.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "A <<boundary>> sztereotípia osztályokra alkalmazható.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "A <<boundary>> sztereotípia képernyőrészletekre alkalmazható.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "OO tervezésben egy CRC-kártya osztályokhoz felelősségeket határozhat meg.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "OO tervezésben egy CRC-kártya fejlesztőkhöz felelősségeket határozhat meg.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Több objektum együttes működésének leírására az állapotgép alkalmas.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Függőség két osztály között akkor áll fenn, ha van közöttük közös aktor.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Függőség két osztály között akkor áll fenn, ha egyik specifikációjának megváltozása kihathat a másik osztály specifikációjára.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Az absztrakt osztály csak limitált számú példánnyal rendelkezhet.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Az absztrakt osztály nem példányosítható.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Az absztrakt osztály nem példányosítható, de örököltethető belőle másik osztály.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Az absztrakt osztály nem példányosítható és öröklésben is csak egy leszármazottja lehet.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Többszintű öröklődés esetén van olyan osztály, melynek őse és leszármazottja is van.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Többszörös öröklődés esetén van olyan osztály, melynek őse és leszármazottja is van.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Többszörös öröklődés esetén lehet olyan osztály, melynek több őse és több leszármazottja van.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Többszörös öröklődés esetén lehet olyan osztály, melynek több őse és egy leszármazottja van.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Egy adott objektum dinamikus működésének leírására az osztálydiagram szolgál.",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Egy adott objektum dinamikus működésének leírására az objektumdiagram szolgál.",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Egy adott objektum dinamikus működésének leírására az állapot-átmenet diagram szolgál.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Egy adott objektum dinamikus működésének leírására a tevékenységdiagram szolgál.",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Alapvetően melyik UML diagramon lehetséges üzenetek feltüntetése?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Use case diagram",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Szekvencia diagram",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Állapotgép",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Osztálydiagram",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Alapvetően melyik diagramon lehet események bekövetkezését jelölni?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Use case diagram",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Szekvencia diagram",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "Állapot-álmenet diagram",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Osztálydiagram",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az osztálydiagramon osztályokra alkalmazható sztereotípiákat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "<<implements>>",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "<<uses>>",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "<<entity>>",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "<<boundary>>",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Jelölje az igaz állításokat!", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Refaktoring során elképzelhető, hogy új metódusok kerülnek egy osztályba.",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Refaktoring során a funkcionalitás nem változik meg.",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Mit jelent az emlékező állapot?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Olyan állapot, amelyik emlékszik arra, hogy melyik állapotból származott a vezérjel, amikor odaért",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "Olyan állapot, amelyik emlékszik arra, hogy melyik alállapotból terminált, és képes arra, hogy az állapotba való újabb belépéskor ugyanabba az állapotba kerüljön.",
+				"helyes" : true
+			},
+            {
+				"szoveg" : "Olyan állapot, amelyik emlékszik arra, hogy a vezérjel hányszor volt már jelen ebben az állapotban, illetve igény esetén mérhető az állapotban töltött idő hossza is",
+				"helyes" : false
+			}
+		]
+	},
+	{
+		"kerdes": "Mi a vezérlőautomata?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "A vezérlőautomata olyan telepítési diagram, mely műszaki eszközt, rendszert vezérel, vagy ír le",
+				"helyes" : false
+            },
+            {
+				"szoveg" : "A vezérlőautomata olyan osztálydiagram, mely műszaki eszközt, rendszert vezérel, vagy ír le",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "A vezérlőautomata olyan állapotgép, mely műszaki eszközt, rendszert vezérel, vagy ír le",
+				"helyes" : true
+			}
+		]
+	},
+	{
+		"kerdes": "Mi a dialóguslefutás?", 
+		"kep_url" : null, 
+		"valasz" : [
+			{
+				"szoveg" : "Olyan állapotautomata, mely a képernyő állapotait modellezi",
+				"helyes" : true
+            },
+            {
+				"szoveg" : "Olyan szek",
+				"helyes" : false
+			},
+            {
+				"szoveg" : "A vezérlőautomata olyan állapotgép, mely műszaki eszközt, rendszert vezérel, vagy ír le",
+				"helyes" : false
+			}
+		]
 	}
 ];

@@ -97,6 +97,13 @@ body {
     font-size: 1rem;
 }
 
+
+.aktAnswer img {
+    display : flex;
+    max-height : 250px;
+    padding-right: 50px;
+}
+
 button {
     background: linear-gradient(90deg, #c7eaff 0%, #0066a3 100%);
     color: white;

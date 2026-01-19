@@ -68,9 +68,20 @@ function showQuestion(){
         const answerLabel = document.createElement('label');
         answerLabel.htmlFor = 'ans'+i;
         answerLabel.textContent = possibleAnswer.szoveg;
-        answerLabel.style.cursor = 'pointer';        
-
+        answerLabel.style.cursor = 'pointer';  
+        
+        
+        
+        
         box.appendChild(checkbox);
+        
+        if (possibleAnswer.kep){
+            const answerImg = document.createElement('img');
+            answerImg.src = possibleAnswer.kep;
+            console.log(answerImg.src);
+            box.appendChild(answerImg);
+        }
+
         box.appendChild(answerLabel);
 
         box.onclick = function(e) {
