@@ -101,7 +101,7 @@ body {
 .aktAnswer img {
     display : flex;
     max-height : 250px;
-    max-width : 70%;
+    max-width : 30%;
     padding-right: 50px;
 }
 
@@ -175,3 +175,4 @@ button:active {
     }
 
 }
+
